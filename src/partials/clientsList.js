@@ -1,38 +1,38 @@
 const clientsList = () => {
     return (
         <>
-        <h2 class="heading"> Our Clients </h2>
-            <div class="container">
-                <div class="slider" id="clients">
+        <h2 className="heading"> Our Clients </h2>
+            <div className="container">
+                <div className="slider" id="clients">
                     <div>
-                        <i class="lab la-facebook-f"></i>
+                        <i className="lab la-facebook-f"></i>
                     </div>
                     <div>
-                        <i class="lab la-facebook-f"></i>
+                        <i className="lab la-facebook-f"></i>
                     </div>
                     <div>
-                        <i class="lab la-facebook-f"></i>
+                        <i className="lab la-facebook-f"></i>
                     </div>
                     <div>
-                        <i class="lab la-facebook-f"></i>
+                        <i className="lab la-facebook-f"></i>
                     </div>
                     <div>
-                        <i class="lab la-facebook-f"></i>
+                        <i className="lab la-facebook-f"></i>
                     </div>
                     <div>
-                        <i class="lab la-facebook-f"></i>
+                        <i className="lab la-facebook-f"></i>
                     </div>
                     <div>
-                        <i class="lab la-facebook-f"></i>
+                        <i className="lab la-facebook-f"></i>
                     </div>
                     <div>
-                        <i class="lab la-facebook-f"></i>
+                        <i className="lab la-facebook-f"></i>
                     </div>
                     <div>
-                        <i class="lab la-facebook-f"></i>
+                        <i className="lab la-facebook-f"></i>
                     </div>
                     <div>
-                        <i class="lab la-facebook-f"></i>
+                        <i className="lab la-facebook-f"></i>
                     </div>
                 </div>
             </div>

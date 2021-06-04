@@ -102,7 +102,7 @@ section{
 }
 
 .hero-image{
-    background-image: url('./hero-image-flipped.png');
+    background-image: url('./static/hero-image-flipped.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -456,7 +456,7 @@ input, textarea{
 }
 
 .slide{
-    display: none;
+    /* display: none; */
     text-align: center;
 }
 
@@ -665,7 +665,7 @@ input, textarea{
     }
 
     #hero{
-        background: url(./hero-background-mobile.png);
+        background: url("./static/hero-background-mobile.png");
         background-size: cover;
         background-repeat: no-repeat;
         padding: 0 0;

@@ -23,12 +23,12 @@ const primaryNav = () => {
             <div className="hamburger visibleForMobile">
                 <div className="container">
                     <ul>
-                        <li> <a href="#" id="hamClose"> <i class="las la-ellipsis-h"></i> </a> </li>
+                        <li> <a href="#" id="hamClose"> <i className="las la-ellipsis-h"></i> </a> </li>
                         <li> <a href="#" className="logo"> <img src={logo} alt="logo"/> </a> </li>
-                        <li>  <a href="./static-page.html"> <i class="las la-question-circle"></i>  about </a> </li>
-                        <li> <a href="#"><i class="las la-mail-bulk"></i> contact </a> </li>
-                        <li> <a href="#"><i class="las la-cogs"></i> services </a> </li>
-                        <li> <a href="#"><i class="las la-blog"></i> blog </a> </li>
+                        <li>  <a href="./static-page.html"> <i className="las la-question-circle"></i>  about </a> </li>
+                        <li> <a href="#"><i className="las la-mail-bulk"></i> contact </a> </li>
+                        <li> <a href="#"><i className="las la-cogs"></i> services </a> </li>
+                        <li> <a href="#"><i className="las la-blog"></i> blog </a> </li>
                     </ul>
                 </div>
             </div>

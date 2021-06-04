@@ -1,5 +1,5 @@
 import './App.css';
-import './static/app.js'
+// import '../public/actions'
 
 import Home from './pages/home'
 

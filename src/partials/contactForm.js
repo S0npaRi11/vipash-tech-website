@@ -19,7 +19,7 @@ const contactForm = () => {
 
                 <br />
 
-                <label for="name"> Message </label> <br />
+                <label htmlFor="name"> Message </label> <br />
                 <textarea name="message" id="message" cols="20" rows="6"></textarea> 
 
                 <br />
