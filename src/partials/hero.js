@@ -1,3 +1,5 @@
+import React from 'react';
+
 const hero = () => {
     return (
         <section id="hero" className="grid-12 mgrid">

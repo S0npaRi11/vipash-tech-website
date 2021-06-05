@@ -1,3 +1,6 @@
+import React from 'react';
+import { IoEllipsisVerticalSharp, IoEllipsisHorizontalSharp } from 'react-icons/io5'
+
 import logo from '../static/card-image.png'
 
 const primaryNav = () => {
@@ -7,7 +10,7 @@ const primaryNav = () => {
                 <ul>
                     <li> <a href="#"> <img src={ logo } alt="logo" className="logo"/> </a> </li>
                     <div className="visibleForMobile">
-                        <i className="las la-ellipsis-v" id="hamOpen"></i>
+                        <IoEllipsisVerticalSharp id="hamOpen"/>
                     </div>
 
                     <span className="nav-links hideWhenMobile">
@@ -23,7 +26,7 @@ const primaryNav = () => {
             <div className="hamburger visibleForMobile">
                 <div className="container">
                     <ul>
-                        <li> <a href="#" id="hamClose"> <i className="las la-ellipsis-h"></i> </a> </li>
+                        <li> <a href="#" id="hamClose"> <IoEllipsisHorizontalSharp /> </a> </li>
                         <li> <a href="#" className="logo"> <img src={logo} alt="logo"/> </a> </li>
                         <li>  <a href="./static-page.html"> <i className="las la-question-circle"></i>  about </a> </li>
                         <li> <a href="#"><i className="las la-mail-bulk"></i> contact </a> </li>

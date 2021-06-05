@@ -1,6 +1,8 @@
+import React from 'react';
+
 const contactForm = () => {
     return (
-        <>
+        <React.Fragment>
             <h2 className="heading"> Contact Us </h2>
 
             <div className="form">
@@ -26,7 +28,7 @@ const contactForm = () => {
 
                 <button type="submit" id="submit"> Submit </button>
             </div>
-        </>
+        </React.Fragment>
     )
 }
 

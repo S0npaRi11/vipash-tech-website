@@ -1,3 +1,5 @@
+import React from 'react';
+
 import ClientList from './clientsList'
 import Testimonies from './testimonies' 
 

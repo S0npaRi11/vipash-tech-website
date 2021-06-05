@@ -227,12 +227,12 @@ section{
     padding: 30px 15px;
 }
 
-address > i{
+address > svg{
     font-size: 65px;
     padding: 0 0px 15px 0;
 }
 
-.phoneNo > i{
+.phoneNo > svg{
     font-size: 24px;
 }
 
@@ -344,7 +344,7 @@ nav ul li a:hover{
 
 .card{
     width: 100%;
-    height: 200px;
+    min-height: 200px;
     background: #FFFCF9;
     color: #252B31;
     padding: 15px;
@@ -458,6 +458,15 @@ input, textarea{
 .slide{
     /* display: none; */
     text-align: center;
+    /* color: #FFFCF9; */
+}
+
+.slick-dots{
+    position: inherit !important;
+}
+
+.slick-slide img{
+    display: inherit !important;
 }
 
 .prev, .next{
@@ -575,9 +584,9 @@ input, textarea{
     to {opacity: 1}
 }
 
-.slick-arrow{
+/* .slick-arrow{
     display: none !important;
-}
+} */
 
 @media only screen and (max-width: 900px){
 
