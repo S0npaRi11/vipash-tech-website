@@ -959,7 +959,7 @@ input, textarea{
     }
 
     #hero{
-        background: url("./static/vipash-tech-mobile-hero-image.webp");
+        background: url("./static/hero/main-mobile.webp");
         background-size: cover;
         background-repeat: no-repeat;
         padding: 0 0;
