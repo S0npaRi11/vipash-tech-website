@@ -1,10 +1,10 @@
 import React from 'react';
 import Slider from 'react-slick'
 
-import chipmunkLogo from '../static/logos/chipmunk-store.png'
-import mnmLogo from '../static/logos/mnm-exports.jpg'
-import paragLogo from '../static/logos/parag-mahale.png'
-import manishConstructionLogo from '../static/logos/manish-construction.jpg'
+import chipmunkLogo from '../static/logos/chipmunk-store.webp'
+import mnmLogo from '../static/logos/mnm-exports.webp'
+import paragLogo from '../static/logos/parag-mahale.webp'
+import manishConstructionLogo from '../static/logos/manish-construction.webp'
 
 const clientsList = () => {
 

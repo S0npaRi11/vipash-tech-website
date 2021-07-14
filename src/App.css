@@ -151,7 +151,7 @@ section{
 #hero{
     height: 100vh;
     padding: 0 0;
-    background: url('./static/hero/vipash-tech-hero-\ background\ -image.jpg');
+    background: url('./static/hero/vipash-tech-hero-\ background\ -image.webp');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0 0;
@@ -159,7 +159,7 @@ section{
 }
 
 #hero-websiteDev{
-    background: url('./static/hero/websiteDev-desktop.jpg');
+    background: url('./static/hero/websiteDev-desktop.webp');
     height: 100vh;
     padding: 0 0;
     background-size: cover;
@@ -169,7 +169,7 @@ section{
 }
 
 #hero-eCommerce{
-    background: url('./static/hero/eCommerce-desktop.jpg');
+    background: url('./static/hero/eCommerce-desktop.webp');
     height: 100vh;
     padding: 0 0;
     background-size: cover;
@@ -959,7 +959,7 @@ input, textarea{
     }
 
     #hero{
-        background: url("./static/vipash-tech-mobile-hero-image.jpg");
+        background: url("./static/vipash-tech-mobile-hero-image.webp");
         background-size: cover;
         background-repeat: no-repeat;
         padding: 0 0;
@@ -967,7 +967,7 @@ input, textarea{
     }
 
     #hero-websiteDev{
-        background: url('./static/hero/websiteDev-mobile.jpg');
+        background: url('./static/hero/websiteDev-mobile.webp');
         background-size: cover;
         background-repeat: no-repeat;
         padding: 0 0;
@@ -975,7 +975,7 @@ input, textarea{
     }
     
     #hero-eCommerce{
-        background: url('./static/hero/eCommerce-mobile.jpg');
+        background: url('./static/hero/eCommerce-mobile.webp');
         background-size: cover;
         background-repeat: no-repeat;
         padding: 0 0;

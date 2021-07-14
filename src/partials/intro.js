@@ -1,8 +1,8 @@
 import React from 'react';
 import Zoom from 'react-reveal/Zoom'
 
-import pmThumb from '../static/portfolio-thumbnails/s0npaRi11-portfolio-img.png'
-import chipmunkThumb from '../static/portfolio-thumbnails/chipmunk-store-img.png'
+import pmThumb from '../static/portfolio-thumbnails/s0npaRi11-portfolio-img.webp'
+import chipmunkThumb from '../static/portfolio-thumbnails/chipmunk-store-img.webp'
 
 const intro = () => {
     return (
