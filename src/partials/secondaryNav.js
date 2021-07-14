@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom'
-import { IoEllipsisVerticalSharp, IoEllipsisHorizontalSharp, IoInformationCircleOutline, IoMailOutline, IoCogOutline } from 'react-icons/io5'
+import { IoEllipsisVerticalSharp, IoInformationCircleOutline, IoMailOutline, IoCogOutline } from 'react-icons/io5'
 
 
 
-import logo from '../static/Vipash-technologies-logo/2.jpg'
+import logo from '../static/Vipash-technologies-logo/logo-70x70.webp'
 
 const secondaryNav = () => {
 
@@ -38,7 +38,7 @@ const secondaryNav = () => {
             { toggle && <div className="hamburger visibleForMobile">
                 <div className="container">
                     <ul>
-                        <li> <a onClick={ toggleHam } id="hamClose"> <IoEllipsisHorizontalSharp /> </a> </li>
+                        {/* <li> <a onClick={ toggleHam } id="hamClose"> <IoEllipsisHorizontalSharp /> </a> </li> */}
                         {/* <li> <a href="#" className="logo"> <img src={logo} alt="logo"/> </a> </li> */}
                         <li>  <NavLink to="/about" activeClassName="navActive"> <IoInformationCircleOutline />  about </NavLink> </li>
                         <li> <NavLink to="/contact" activeClassName="navActive"><IoMailOutline /> contact </NavLink> </li>

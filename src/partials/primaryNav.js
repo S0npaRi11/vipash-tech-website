@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom'
-import { IoEllipsisVerticalSharp, IoEllipsisHorizontalSharp, IoInformationCircleOutline, IoMailOutline, IoCogOutline } from 'react-icons/io5'
+import { IoEllipsisVerticalSharp, IoEllipsisHorizontalSharp,IoInformationCircleOutline, IoMailOutline, IoCogOutline } from 'react-icons/io5'
 
 // import logo from '../static/card-image.png'
-import logo from '../static/Vipash-technologies-logo/2.jpg'
+import logo from '../static/Vipash-technologies-logo/logo-70x70.webp'
 
 
 const primaryNav = () => {

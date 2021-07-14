@@ -21,7 +21,7 @@ const expertiese = () => {
                         </div>
                     </Fade>
     
-                    <Fade up duration={800} delay={200}>
+                    <Fade up duration={800} delay={50}>
                         <div className="card">
                             <div className="icon"> <IoCodeSlashOutline /> </div>
                             <div className="heading"> Development </div>
@@ -29,7 +29,7 @@ const expertiese = () => {
                         </div>
                     </Fade>
                     
-                    <Fade up duration={800} delay={400}>
+                    <Fade up duration={800} delay={100}>
                         <div className="card">
                             <div className="icon"> <IoCartOutline /> </div>
                             <div className="heading"> eCommerce </div>
@@ -37,7 +37,7 @@ const expertiese = () => {
                         </div>
                     </Fade>
                     
-                    <Fade up duration={800} delay={600}>
+                    <Fade up duration={800} delay={150}>
                         <div className="card">
                             <div className="icon"> <IoSearchCircleOutline /> </div>
                             <div className="heading"> SEO ready </div>
@@ -45,7 +45,7 @@ const expertiese = () => {
                         </div>
                     </Fade>
     
-                    <Fade up duration={800} delay={800}>
+                    <Fade up duration={800} delay={200}>
                         <div className="card">
                             <div className="icon"> <IoPhonePortraitOutline /> </div>
                             <div className="heading"> Mobile first approch </div>
@@ -53,7 +53,7 @@ const expertiese = () => {
                         </div>
                     </Fade>
                    
-                    <Fade up duration={800} delay={1000}>
+                    <Fade up duration={800} delay={250}>
                         <div className="card">
                             <div className="icon"> <IoSpeedometerOutline /> </div>
                             <div className="heading"> Fast and responsive </div>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { IoLocationOutline, IoCallOutline, IoAtSharp, IoLogoFacebook, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5'
 import Reveal from 'react-reveal/Fade'
 
-import logo from '../static/Vipash-technologies-logo/2.jpg'
+import logo from '../static/Vipash-technologies-logo/logo-100x100.webp'
 
 import ContactForm from './contactForm'
 

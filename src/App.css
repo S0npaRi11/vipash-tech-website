@@ -186,6 +186,10 @@ section{
     width: calc(100% - 35% - 100px);
 }
 
+.hero-text h1{
+    padding-bottom: 50px;
+}
+
 .hero-image{
     /* background-image: url('./static/hero-image-flipped.png'); */
     background-size: cover;
@@ -456,7 +460,7 @@ nav{
     position: absolute;
     width: 100%;
     height: auto;
-    max-height: 90px;
+    max-height: 70px;
     background: #ffffff;
     z-index: 100;
 }
@@ -492,7 +496,7 @@ nav ul li a{
     display: block;
     color: #463f3aff;
     text-align: center;
-    padding: 20px 0px 0px 0px;
+    /* padding: 20px 0px 0px 0px; */
     text-decoration: none;
     width: auto;
     /* height: 60px; */
@@ -520,7 +524,7 @@ nav ul li a:hover{
     width: calc(100% - 50% - 100px);
     display: block;
     height: 100%;
-    margin: 18px;
+    margin: 24px;
     display: flex;
     justify-content: space-around;
 }
@@ -879,12 +883,12 @@ input, textarea{
 
     .visibleForMobile ,.visibleForMobile.ham{
         display: block;
-        line-height: 7rem;
+        line-height: 4rem;
         width: auto;
     }
 
     nav{
-        min-height: 120px;
+        min-height: 100px;
     }
 
     .hamburger{
@@ -895,7 +899,7 @@ input, textarea{
         bottom: 0;
         /* left:100vw; */
         transition: 0.2s ease-out;
-        background: #463f3aff;
+        background: #fff;
         z-index: 110;
         /* overscroll-behavior: contain; */
         /* overflow: hidden; */
@@ -910,7 +914,8 @@ input, textarea{
 
     .hamburger ul{
         display: block;
-        height: 100vh;
+        /* height: 100vh; */
+        padding-top: 50px;
         /* padding-top: 25px; */
     }
 
@@ -935,7 +940,7 @@ input, textarea{
 
     .hamburger ul li a{
         text-align: left;
-        color: #FFFCF9;
+        color: #463f3aff;
     }
 
     .hamburger ul li a svg{

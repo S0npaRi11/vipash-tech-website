@@ -1,6 +1,6 @@
 import React from 'react';
 
-import avatar from '../static/avatar.jpg'
+import avatar from '../static/avatar.webp'
 import Slider from 'react-slick'
 
 const testimonies = () => {

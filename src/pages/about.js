@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from 'react'
 import {IoAnalytics, IoDesktop, IoHammer, IoOptions, IoTime, IoPlanet, IoFlame, IoShieldCheckmark, IoRose, IoShield} from 'react-icons/io5'
 import { Helmet } from 'react-helmet'
 
-import logo from '../static/Vipash-technologies-logo/logo-big.jpg'
+import logo from '../static/Vipash-technologies-logo/logo-big.webp'
 
 
 const SecondaryFooter = lazy(() => import('../partials/secondaryFooter'))
