@@ -1,3 +1,5 @@
+import React from 'react';
+
 const header = ({ heading }) => {
     return (
         <div id="header">

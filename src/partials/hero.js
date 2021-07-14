@@ -1,13 +1,20 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade'
 
-const hero = () => {
+// import Background from '../static/hero/vipash-tech-hero-background-image.jpg'
+
+const hero = ({ id, title }) => {
     return (
-        <section id="hero" className="grid-12 mgrid">
+        <section id={id} className="grid-12 mgrid">
+            {/* <img src={Background} alt="" className="hero-image"/> */}
             <div className="container">
                 <div className="hero-text">
                     <div className="container">
-                        <h1 data-aos="fade-right" data-aos-duration="1500"> Grow your business <br /> by going online </h1>
-                        <button className="hero-action"> Request a Quote </button>
+                        {/* <h1> We provide online solutions <br /> that fits your needs </h1> */}
+                        <Fade left duration={800}>
+                            <h1> { title } </h1>
+                        </Fade>
+                        <a href="#contact-form" className="hero-action"> Request a Quote </a>
                     </div>
                 </div>
             </div>

@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import { IoLocationOutline, IoCallOutline, IoAtSharp, IoLogoFacebook, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5'
+import Reveal from 'react-reveal/Fade'
 
-import logo from '../static/card-image.png'
+import logo from '../static/Vipash-technologies-logo/2.jpg'
 
 import ContactForm from './contactForm'
 
@@ -10,8 +12,12 @@ const primaryFooter = () => {
         <section id="footer">
             <div className="container">
                 <div className="grid-12 mgrid">
-                    <div className="container">
-                        <ContactForm />
+                    <div className="container" id="contact-form">
+                        <h2 className="heading"> Contact Us </h2> 
+
+                        <Reveal up duration={800}>
+                            <ContactForm />
+                        </Reveal>
                     </div>
 
                     <div className="grid-2 mgrid">
@@ -26,7 +32,7 @@ const primaryFooter = () => {
                                 Sakri Road, Dhule <br />
                                 Maharashtra, India <br />
                                 <br />
-                                <span className="phoneNo"> <IoCallOutline /><a href="#"> &nbsp;+91&nbsp;6545851263 </a> </span><br />
+                                <span className="phoneNo"> <IoCallOutline /><a href="#"> &nbsp;+91&nbsp;7057634075 </a> </span><br />
                                 <span className="phoneNo"> <IoAtSharp /> <a href="#"> &nbsp;parag@example.com </a></span>
                                 
                             </address>
@@ -34,16 +40,16 @@ const primaryFooter = () => {
                         <div>
                             <ul className="quick-links">
                                 <li>
-                                    <a href="#"> FAQ </a>
+                                    <Link to="/faq"> FAQ </Link>
                                 </li>
                                 <li>
-                                    <a href="#"> Privacy Policy </a>
+                                    <Link to="/privacy-policy/"> Privacy Policy </Link>
                                 </li>
                                 <li>
-                                    <a href="#"> Return and Refund Policy </a>
+                                    <Link to="/return-policy/"> Return and Refund Policy </Link>
                                 </li>
                                 <li>
-                                    <a href="#"> Terms and Conditions </a>
+                                    <Link to="/terms-and-conditions/"> Terms and Conditions </Link>
                                 </li>
                             </ul>
                         </div>

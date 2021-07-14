@@ -1,12 +1,17 @@
 import React from 'react';
 import Slider from 'react-slick'
 
+import chipmunkLogo from '../static/logos/chipmunk-store.png'
+import mnmLogo from '../static/logos/mnm-exports.jpg'
+import paragLogo from '../static/logos/parag-mahale.png'
+import manishConstructionLogo from '../static/logos/manish-construction.jpg'
+
 const clientsList = () => {
 
     const options = {
         infinite: true,
         dots: false,
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         // speed: 2000,
@@ -15,49 +20,22 @@ const clientsList = () => {
 
     return (
         <React.Fragment>
-        <h2 className="heading"> Our Clients </h2>
-            <div className="container">
+        {/* <h2 className="heading"> Our Clients </h2> */}
+            <div className="container p-tb-30">
                 <Slider {...options}>
                     <div>
-                        {/* <i className="lab la-facebook-f"></i> */}
-                        A
+                        <img src={chipmunkLogo} alt="chipmunk-logo" className="client-logo"/>
                     </div>
                     <div>
-                        {/* <i className="lab la-facebook-f"></i> */}
-                        B
+                        <img src={mnmLogo} alt="MNM-exports-logo" className="client-logo"/>
                     </div>
-                    <div>
-                        {/* <i className="lab la-facebook-f"></i> */}
-                        c
-                    </div>
-                    <div>
-                        {/* <i className="lab la-facebook-f"></i> */}
-                        d
 
-                    </div>
                     <div>
-                        {/* <i className="lab la-facebook-f"></i> */}
-                        e
+                        <img src={paragLogo} alt="parag-mahale-portfolio-logo" className="client-logo"/>
                     </div>
+
                     <div>
-                        {/* <i className="lab la-facebook-f"></i> */}
-                        f
-                    </div>
-                    <div>
-                        {/* <i className="lab la-facebook-f"></i> */}
-                        g
-                    </div>
-                    <div>
-                        {/* <i className="lab la-facebook-f"></i> */}
-                        h
-                    </div>
-                    <div>
-                        {/* <i className="lab la-facebook-f"></i> */}
-                        i
-                    </div>
-                    <div>
-                        {/* <i className="lab la-facebook-f"></i> */}
-                        j
+                        <img src={manishConstructionLogo} alt="manish-construction-logo" className="client-logo"/>
                     </div>
                 </Slider>
             </div>

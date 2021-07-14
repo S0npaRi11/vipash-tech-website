@@ -12,7 +12,7 @@ const home = () => {
         <React.Fragment>
             <PrimaryNav />
 
-            <Hero />
+            <Hero  id={'hero'} title={'We provide online solutions that fits your needs'}/>
 
             <Expertiese />
 

@@ -1,3 +1,8 @@
+import React from 'react';
+import { Link } from 'react-router-dom'
+import { IoLocationOutline, IoCallOutline, IoAtSharp, IoLogoFacebook, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5'
+
+
 const secondaryFooter = () => {
     return (
         <div className="footer">
@@ -11,34 +16,34 @@ const secondaryFooter = () => {
                             Sakri Road, Dhule <br />
                             Maharashtra, India <br />
                             <br />
-                            <span class="phoneNo"> <i class="las la-phone"></i><a href="#"> &nbsp;+91&nbsp;6545851263 </a> </span><br />
-                            <span class="phoneNo"> <i class="las la-at"></i> <a href="#"> &nbsp;parag@example.com </a></span>
+                            <span className="phoneNo"> <IoCallOutline /><a href="#"> &nbsp;+91&nbsp;6545851263 </a> </span><br />
+                            <span className="phoneNo"> <IoAtSharp /> <a href="#"> &nbsp;parag@example.com </a></span>
                             
                         </address>
                     </div>
 
                     <div>
-                        <ul class="quick-links">
+                        <ul className="quick-links">
                             <li>
-                                <a href="#"> FAQ </a>
+                                <Link to="/faq"> FAQ </Link>
                             </li>
                             <li>
-                                <a href="#"> Privacy Policy </a>
+                                <Link to="/privacy-policy"> Privacy Policy </Link>
                             </li>
                             <li>
-                                <a href="#"> Return and Refund Policy </a>
+                                <Link to="/return-policy"> Return and Refund Policy </Link>
                             </li>
                             <li>
-                                <a href="#"> Terms and Conditions </a>
+                                <Link to="/terms-and-conditions"> Terms and Conditions </Link>
                             </li>
                         </ul>
                     </div>
 
                     <div>
-                        <span class="social-media-links">
-                            <a href="#"> <i class="lab la-facebook"></i> </a>
-                            <a href="#"> <i class="lab la-instagram"></i> </a>
-                            <a href="#"> <i class="lab la-linkedin-in"></i> </a>
+                        <span className="social-media-links">
+                            <a href="#"> <IoLogoFacebook /> </a>
+                            <a href="#"> <IoLogoInstagram /> </a>
+                            <a href="#"> <IoLogoLinkedin /> </a>
                         </span>
                     </div>
                 </div>
