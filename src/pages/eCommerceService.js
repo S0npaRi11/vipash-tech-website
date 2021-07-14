@@ -1,15 +1,25 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import {IoHammerOutline, IoBrushOutline, IoSearchCircleOutline, IoPhonePortraitOutline, IoSunnyOutline, IoLogoPaypal, IoBagCheckOutline, IoPersonOutline} from 'react-icons/io5'
 import { Helmet } from 'react-helmet'
 
-import PrimaryNav from '../partials/primaryNav'
-import PrimaryFooter from '../partials/primaryFooter'
-import Hero from '../partials/hero'
-import Portfolio from '../partials/intro'
+// import PrimaryNav from '../partials/primaryNav'
+// import  from '../partials/primaryFooter'
+// import Hero from '../partials/hero'
+// import Portfolio from '../partials/intro'
+
+const PrimaryNav = lazy(() => import('../partials/primaryNav'))
+const PrimaryFooter = lazy(() => import('../partials/primaryFooter'))
+const Hero = lazy(() => import('../partials/hero'))
+const Portfolio = lazy(() => import('../partials/intro'))
+
 
 const eCommerceService = () => {
     return (
         <React.Fragment>
+
+            <Suspense fallback={<div className="loader"> Loading... </div>}>
+
+          
 
             <Helmet>
                 <title> eCommerce Development - Vipash Technologies </title>
@@ -109,6 +119,8 @@ const eCommerceService = () => {
             <Portfolio />
 
             <PrimaryFooter />
+
+            </Suspense>
         </React.Fragment>
     )
 }

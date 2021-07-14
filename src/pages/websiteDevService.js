@@ -1,15 +1,23 @@
-import React from 'react'
+// import React from 'react'
+import React, { Suspense, lazy } from 'react';
 import {IoDesktopOutline, IoCogSharp,IoCartOutline,IoLogoNodejs } from 'react-icons/io5'
 import { Helmet } from 'react-helmet'
 
-import PrimaryNav from '../partials/primaryNav'
-import PrimaryFooter from '../partials/primaryFooter'
-import Hero from '../partials/hero'
-import Portfolio from '../partials/intro'
+// import PrimaryNav from '../partials/primaryNav'
+// import PrimaryFooter from '../partials/primaryFooter'
+// import Hero from '../partials/hero'
+// import Portfolio from '../partials/intro'
+
+const PrimaryNav = lazy(() => import('../partials/primaryNav'))
+const PrimaryFooter = lazy(() => import('../partials/primaryFooter'))
+const Hero = lazy(() => import('../partials/hero'))
+const Portfolio = lazy(() => import('../partials/intro'))
 
 const websiteDevService = () => {
     return (
         <React.Fragment>
+
+            <Suspense fallback={<div className="loader"> Loading... </div>}>
 
             <Helmet>
                 <title> Website development - Vipash Technologies </title>
@@ -131,6 +139,8 @@ const websiteDevService = () => {
             <Portfolio />
 
             <PrimaryFooter />
+
+            </Suspense>
         </React.Fragment>
     )
 }

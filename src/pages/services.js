@@ -1,16 +1,22 @@
-import React from 'react'
+// import React from 'react'
+import React, { Suspense, lazy } from 'react';
 import {IoCodeSlashOutline, IoCartOutline} from 'react-icons/io5'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 
-import SecondaryNav from '../partials/secondaryNav'
-import Header from '../partials/header'
-import SecondaryFooter from '../partials/secondaryFooter'
+// import SecondaryNav from '../partials/secondaryNav'
+// import Header from '../partials/header'
+// import SecondaryFooter from '../partials/secondaryFooter'
+
+const SecondaryNav = lazy(() => import('../partials/secondaryNav'))
+const Header = lazy(() => import('../partials/header'))
+const SecondaryFooter = lazy(() => import('../partials/secondaryFooter'))
 
 const services = () => {
     return (
         <React.Fragment>
 
+            <Suspense fallback={<div className="loader"> Loading... </div>}>  
             <Helmet>
                 <title> Services - Vipash Technologies </title>
             </Helmet>
@@ -47,6 +53,8 @@ const services = () => {
             </div>
 
             <SecondaryFooter />
+
+            </Suspense>
         </React.Fragment>
     )
 }

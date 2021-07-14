@@ -5,19 +5,6 @@ import { Helmet } from 'react-helmet'
 import './App.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-// import '../public/actions'
-
-// import Home from './pages/home'
-// import PrivacyPolicy from './pages/privacyPolicy'
-// import ReturnPolicy from './pages/returnPolicy'
-// import TermsAndConditions from './pages/termsAndConditions'
-// import Services from './pages/services'
-// import Contact from './pages/contact'
-// import FAQ from './pages/faq'
-// import About from './pages/about'
-// import Complaint from './pages/complaint'
-// import WebDev from './pages/websiteDevService'
-// import Ecom from './pages/eCommerceService'
 
 const Home = lazy(() => import('./pages/home'));
 const PrivacyPolicy = lazy(() => import('./pages/privacyPolicy'))

@@ -1,15 +1,21 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import {IoCallOutline, IoAtSharp} from 'react-icons/io5'
 import { Helmet } from 'react-helmet'
 
-import SecondaryNav from '../partials/secondaryNav'
-import Header from '../partials/header'
-import ContactForm from '../partials/contactForm'
-import SecondaryFooter from '../partials/secondaryFooter'
+// import SecondaryNav from '../partials/secondaryNav'
+// import Header from '../partials/header'
+// import ContactForm from '../partials/contactForm'
+// import  from '../partials/secondaryFooter'
+
+const SecondaryNav = lazy(() => import('../partials/secondaryNav'))
+const Header = lazy(() => import('../partials/header'))
+const ContactForm = lazy(() => import('../partials/contactForm'))
+const SecondaryFooter = lazy(() => import('../partials/secondaryFooter'))
 
 const contact = () => {
     return (
         <React.Fragment>
+            <Suspense fallback={<div className="loader"> Loading... </div>}>
 
             <Helmet>
                 <title> Contact us - Vipash Technologies </title>
@@ -44,6 +50,8 @@ const contact = () => {
             </div>
 
             <SecondaryFooter />
+
+            </Suspense>
         </React.Fragment>
     )
 }

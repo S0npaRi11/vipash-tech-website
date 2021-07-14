@@ -1,14 +1,20 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 
-import SecondaryNav from '../partials/secondaryNav'
-import SecondaryFooter from '../partials/secondaryFooter'
-import Header from '../partials/header'
+// import SecondaryNav from '../partials/secondaryNav'
+// import SecondaryFooter from '../partials/secondaryFooter'
+// import Header from '../partials/header'
+
+const SecondaryNav = lazy(() => import('../partials/secondaryNav'))
+const SecondaryFooter = lazy(() => import('../partials/secondaryFooter'))
+const Header = lazy(() => import('../partials/header'))
 
 const faq = () => {
     return (
         <React.Fragment>
+
+            <Suspense fallback={<div className="loader">  Loading... </div>}>
 
             <Helmet>
                 <title> FAQ - Vipash Technologies </title>
@@ -115,6 +121,8 @@ const faq = () => {
             </div>
 
             <SecondaryFooter />
+
+            </Suspense>
         </React.Fragment>
     )
 }

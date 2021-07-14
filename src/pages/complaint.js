@@ -1,11 +1,11 @@
-import React, {useState} from 'react'
+import React, {useState,Suspense, lazy } from 'react'
 import { Helmet } from 'react-helmet'
 
-import SecondaryNav from '../partials/secondaryNav'
-import Header from '../partials/header'
-import SecondaryFooter from '../partials/secondaryFooter'
-
 import { storage } from '../config/Firebase'
+
+const SecondaryNav = lazy(() => import('../partials/secondaryNav'))
+const Header = lazy(() => import('../partials/header'))
+const SecondaryFooter = lazy(() => import('../partials/secondaryFooter'))
 
 const complaint = () => {
 
@@ -95,6 +95,7 @@ const complaint = () => {
 
     return (
         <React.Fragment>
+            <Suspense fallback={<div className="loader"> Loading... </div>}>
 
             <Helmet>
                 <title> File Complaint - Vipash Technologies </title>
@@ -125,7 +126,7 @@ const complaint = () => {
                         <br />
 
                         <label htmlFor="complaint"> Brief Complaint </label> <br />
-                        <textarea  name="complaint" name="message" id="complaint-brief-complaint" cols="20" rows="6" onChange={(e) => setComplaint(e.target.value)} ></textarea> 
+                        <textarea  name="complaint" id="complaint-brief-complaint" cols="20" rows="6" onChange={(e) => setComplaint(e.target.value)} ></textarea> 
 
                         <br />
 
@@ -139,6 +140,7 @@ const complaint = () => {
 
             <SecondaryFooter />
             
+            </Suspense>
         </React.Fragment>
     )
 }
