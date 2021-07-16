@@ -58,6 +58,11 @@ section{
     overflow: hidden;
 }
 
+.navBtn{
+    padding: 10px;
+    margin-top: -7px;
+}
+
 /* LAYOUTS */
 
 .grid-1{
@@ -184,6 +189,18 @@ section{
     transform: translateY(-50%);
     font-size: 3rem;
     width: calc(100% - 35% - 100px);
+}
+
+.hero-form{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+}
+
+.hero-form button{
+    margin-top: 0;
+
 }
 
 .hero-text h1{
@@ -509,6 +526,11 @@ nav ul li a{
 nav ul li a:hover{
     color: #cec8bf;
 }
+/* nav ul li a:hover > ul{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+} */
 
 .logo{
     width: 70px;
@@ -529,13 +551,33 @@ nav ul li a:hover{
     justify-content: space-around;
 }
 
+/* .deep-nav-links{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+.deep-nav-links li{
+    padding: 10px;
+}
+
+.has-deep-nav:hover ul.deep-nav-links{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+} */
+
 .container{
     width: 90%;
     margin: 0 auto;
 }
 
 .card{
-    max-width: 100%;
+    width: 100%;
     min-height: 200px;
     height: 100%;
     background: #ffffff;
@@ -545,6 +587,10 @@ nav ul li a:hover{
     border-radius: 5px;
     box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.2);
     transition: 0.2s ease-out;
+}
+
+.portfolioCard{
+    width: auto;
 }
 
 .card a{
@@ -994,6 +1040,13 @@ input, textarea{
     .hero-text{
         width: auto;
         font-size: 2rem;
+        top: 40%;
+    }
+
+    .hero-form{
+        left: 10%;
+        /* right: 0; */
+        top: 80%;
     }
 
     .mgrid{

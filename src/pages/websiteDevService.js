@@ -2,6 +2,7 @@
 import React, { Suspense, lazy } from 'react';
 import {IoDesktopOutline, IoCogSharp,IoCartOutline,IoLogoNodejs } from 'react-icons/io5'
 import { Helmet } from 'react-helmet'
+import Fade from 'react-reveal/Fade'
 
 // import PrimaryNav from '../partials/primaryNav'
 // import PrimaryFooter from '../partials/primaryFooter'
@@ -37,7 +38,7 @@ const websiteDevService = () => {
                     </p>
 
                     <div className="grid-12 mgrid landing-info">
-                        <div className="landing-icon"> <IoDesktopOutline/> </div>
+                        <div className="landing-icon"> <Fade left duration={800}>  <IoDesktopOutline/> </Fade> </div> 
                             <div>
                                 <h2> Front End Development </h2>
                                 <p>  Strong Impression with beautiful, user-friendly user interface. </p>
@@ -82,13 +83,13 @@ const websiteDevService = () => {
                                 <li> React </li>
                             </ul>
                         </div>
-                        <div className="landing-icon">  <IoCogSharp /> </div>
+                        <div className="landing-icon"> <Fade right duration={800}>  <IoCogSharp /> </Fade> </div> 
                     </div>
                 </div>
 
                 <div className="container">
                     <div className="grid-12 mgrid landing-info">
-                        <div className="landing-icon"> <IoCartOutline /> </div>
+                       <div className="landing-icon"> <Fade left duration={800}>   <IoCartOutline />  </Fade> </div>
                         <div> 
                             <h2> E-commerce development </h2>
                             <p> eCommerce solutions which are scalable, flexible and feature-rich </p>
@@ -128,8 +129,10 @@ const websiteDevService = () => {
                             </ul>
 
                         </div>
-                        <div className="landing-icon"> 
-                            <IoLogoNodejs /> 
+                       <div className="landing-icon"> 
+                        <Fade right duration={800}>
+                                <IoLogoNodejs /> 
+                        </Fade>
                         </div>
                     </div>
                 </div>

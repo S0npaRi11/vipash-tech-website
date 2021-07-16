@@ -27,8 +27,13 @@ const primaryNav = () => {
 
                     <span className="nav-links hideWhenMobile">
                         <li> <NavLink to="/about" activeClassName="navActive"> about </NavLink> </li>
-                        <li> <NavLink to="/contact" activeClassName="navActive"> contact </NavLink> </li>
-                        <li> <NavLink to="/services" activeClassName="navActive"> services </NavLink> </li>
+                        <li> <NavLink to="/services" className="has-deep-nav" activeClassName="navActive"> services </NavLink>
+                            {/* <ul className="deep-nav-links">
+                                <li> Website Developemnt </li>
+                                <li> eCommerce Developemnt </li>
+                            </ul> */}
+                        </li>
+                        <li> <NavLink to="/contact" activeClassName="navActive"> <button className="navBtn"> contact </button> </NavLink> </li>
                         {/* <li> <Link to="/blog"> blog </Link> </li> */}
                     </span>
 
@@ -38,7 +43,7 @@ const primaryNav = () => {
             { toggle && <div className="hamburger visibleForMobile">
                 <div className="container">
                     <ul>
-                        <li> <a onClick={ toggleHam } id="hamClose"> <IoEllipsisHorizontalSharp /> </a> </li>
+                        {/* <li> <a onClick={ toggleHam } id="hamClose"> <IoEllipsisHorizontalSharp /> </a> </li> */}
                         <li>  <NavLink to="/about" activeClassName="navActive"> <IoInformationCircleOutline />  about </NavLink> </li>
                         <li> <NavLink to="/contact" activeClassName="navActive"> <IoMailOutline /> contact </NavLink> </li>
                         <li> <NavLink to="/services" activeClassName="navActive"><IoCogOutline /> services </NavLink> </li>

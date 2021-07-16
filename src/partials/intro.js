@@ -13,7 +13,7 @@ const intro = () => {
                 <div className="grid-12 mgrid p-tb-30">
                     <Zoom duration={800} delay={0}>
                         <a href="https://s0npari11.github.io/">
-                            <div className="card">
+                            <div className="card portfolioCard">
                                 <img alt="project-image" className="img" src={pmThumb}/>
                                 <div className="heading"> Parag Mahale - Portfolio </div>
                                 <div className="text"> A portfolio website keeping simplicity and easy-navigation in mind. </div>
@@ -21,9 +21,9 @@ const intro = () => {
                         </a>
                     </Zoom>
 
-                    <Zoom duration={800} delay={200}>
+                    <Zoom duration={800} delay={50}>
                     <a href="https://chipmunkstore.com/">
-                            <div className="card">
+                            <div className="card  portfolioCard">
                                 <img alt="project-image" className="img" src={chipmunkThumb}/>
                                 <div className="heading"> Chipmunk Store </div>
                                 <div className="text"> Chipmunk store is India based clothing and apparel eCommerce business, specializing in casual clothing. </div>

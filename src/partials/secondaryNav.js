@@ -27,8 +27,9 @@ const secondaryNav = () => {
 
                     <span className="nav-links hideWhenMobile">
                         <li> <NavLink to="/about" activeClassName="navActive"> about </NavLink> </li>
-                        <li> <NavLink to="/contact" activeClassName="navActive"> contact </NavLink> </li>
                         <li> <NavLink to="/services" activeClassName="navActive"> services </NavLink> </li>
+                        <li> <NavLink to="/contact" activeClassName="navActive"> <button className="navBtn"> contact </button>  </NavLink> </li>
+
                         {/* <li> <NavLink to="/blog"> blog </NavLink> </li> */}
                     </span>
 
