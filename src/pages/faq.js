@@ -2,10 +2,6 @@ import React, { Suspense, lazy } from 'react'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 
-// import SecondaryNav from '../partials/secondaryNav'
-// import SecondaryFooter from '../partials/secondaryFooter'
-// import Header from '../partials/header'
-
 const SecondaryNav = lazy(() => import('../partials/secondaryNav'))
 const SecondaryFooter = lazy(() => import('../partials/secondaryFooter'))
 const Header = lazy(() => import('../partials/header'))

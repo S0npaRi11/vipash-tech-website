@@ -1,13 +1,7 @@
-// import React from 'react'
 import React, { Suspense, lazy } from 'react';
 import {IoDesktopOutline, IoCogSharp,IoCartOutline,IoLogoNodejs } from 'react-icons/io5'
 import { Helmet } from 'react-helmet'
 import Fade from 'react-reveal/Fade'
-
-// import PrimaryNav from '../partials/primaryNav'
-// import PrimaryFooter from '../partials/primaryFooter'
-// import Hero from '../partials/hero'
-// import Portfolio from '../partials/intro'
 
 const PrimaryNav = lazy(() => import('../partials/primaryNav'))
 const PrimaryFooter = lazy(() => import('../partials/primaryFooter'))

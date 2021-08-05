@@ -1,4 +1,4 @@
-import dotenv from 'dotenv'
+// import dotenv from 'dotenv'
 import firebase from 'firebase/app'
 import 'firebase/storage'
 

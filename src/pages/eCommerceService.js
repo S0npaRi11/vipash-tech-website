@@ -3,16 +3,10 @@ import {IoHammerOutline, IoBrushOutline, IoSearchCircleOutline, IoPhonePortraitO
 import { Helmet } from 'react-helmet'
 import Fade from 'react-reveal/Fade'
 
-// import PrimaryNav from '../partials/primaryNav'
-// import  from '../partials/primaryFooter'
-// import Hero from '../partials/hero'
-// import Portfolio from '../partials/intro'
-
 const PrimaryNav = lazy(() => import('../partials/primaryNav'))
 const PrimaryFooter = lazy(() => import('../partials/primaryFooter'))
 const Hero = lazy(() => import('../partials/hero'))
 const Portfolio = lazy(() => import('../partials/intro'))
-
 
 const eCommerceService = () => {
     return (

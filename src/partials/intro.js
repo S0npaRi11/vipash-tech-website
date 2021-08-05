@@ -14,7 +14,7 @@ const intro = () => {
                     <Zoom duration={800} delay={0}>
                         <a href="https://s0npari11.github.io/">
                             <div className="card portfolioCard">
-                                <img alt="project-image" className="img" src={pmThumb}/>
+                                <img src={pmThumb} alt="parag-mahale-portfolio" className="img" />
                                 <div className="heading"> Parag Mahale - Portfolio </div>
                                 <div className="text"> A portfolio website keeping simplicity and easy-navigation in mind. </div>
                             </div>
@@ -24,24 +24,12 @@ const intro = () => {
                     <Zoom duration={800} delay={50}>
                     <a href="https://chipmunkstore.com/">
                             <div className="card  portfolioCard">
-                                <img alt="project-image" className="img" src={chipmunkThumb}/>
+                                <img src={chipmunkThumb} alt="chipmunk-store" className="img" />
                                 <div className="heading"> Chipmunk Store </div>
                                 <div className="text"> Chipmunk store is India based clothing and apparel eCommerce business, specializing in casual clothing. </div>
                             </div>
                         </a>
                     </Zoom>
-
-                    {/* <Zoom duration={800} delay={400}>
-                        <div className="card"> <div className="text"> Project 3 </div> </div>
-                    </Zoom>
-
-                    <Zoom duration={800} delay={600}>
-                        <div className="card"> <div className="text"> Project 4 </div> </div>
-                    </Zoom>
-
-                    <Zoom duration={800} delay={800}>
-                        <div className="card col-3"> More Projects <button> View More </button> </div>  
-                    </Zoom> */}
                 </div>
             </div>
 

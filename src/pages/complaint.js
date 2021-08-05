@@ -14,10 +14,8 @@ const complaint = () => {
     const [email, setEmail] = useState('')
     const [complaint, setComplaint] = useState('')
     const [proof, setProof] = useState('')
-    // const [proofURL, setProofURL] = useState('')
 
     const validateForm = () => {
-        // validate the form
         let isNameValid = false,
             isBusinessNameValid = false,
             isEmailValid = false,
@@ -25,7 +23,6 @@ const complaint = () => {
             isProofValid = false;
 
         if(email){
-            // const check = /^[^\s@]+@[^\s@]+$/
             const check = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
             isEmailValid  = check.test(email)
         }
@@ -42,8 +39,6 @@ const complaint = () => {
     const fileComplaint = (e) => {
         e.preventDefault()
         if(validateForm()){
-        // if(true){
-
             const uploadTask = storage.ref(`proof/${proof.name}`).put(proof)
 
             uploadTask.on(
@@ -58,10 +53,6 @@ const complaint = () => {
                         .child(proof.name)
                         .getDownloadURL()
                         .then(async url => {
-                            // setProofURL(url)
-                            
-                            // if upload is sucessful, then file the complaint
-
                             const URL = 'https://businesssss-api.herokuapp.com/complaints'
 
                             const formData = {

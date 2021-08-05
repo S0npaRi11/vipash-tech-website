@@ -1,10 +1,5 @@
-// import React from 'react'
 import React, { Suspense, lazy } from 'react';
 import { Helmet } from 'react-helmet'
-
-// import SecondaryNav from '../partials/secondaryNav'
-// import Header from '../partials/header'
-// import SecondaryFooter from '../partials/secondaryFooter'
 
 const SecondaryNav = lazy(() => import('../partials/secondaryNav'))
 const Header = lazy(() => import('../partials/header'))

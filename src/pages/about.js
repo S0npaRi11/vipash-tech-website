@@ -4,14 +4,10 @@ import { Helmet } from 'react-helmet'
 
 import logo from '../static/Vipash-technologies-logo/logo-big.webp'
 
-
 const SecondaryFooter = lazy(() => import('../partials/secondaryFooter'))
 const SecondaryNav = lazy(() => import('../partials/secondaryNav'))
 const Header = lazy(() => import('../partials/header'))
 const Clients = lazy(() => import('../partials/clientsList'))
-
-// import logo from '../static/Vipash-technologies-logo/1.jpg'
-
 
 const about = () => {
     return (

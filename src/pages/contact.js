@@ -2,11 +2,6 @@ import React, { Suspense, lazy } from 'react'
 import {IoCallOutline, IoAtSharp} from 'react-icons/io5'
 import { Helmet } from 'react-helmet'
 
-// import SecondaryNav from '../partials/secondaryNav'
-// import Header from '../partials/header'
-// import ContactForm from '../partials/contactForm'
-// import  from '../partials/secondaryFooter'
-
 const SecondaryNav = lazy(() => import('../partials/secondaryNav'))
 const Header = lazy(() => import('../partials/header'))
 const ContactForm = lazy(() => import('../partials/contactForm'))
@@ -33,7 +28,6 @@ const contact = () => {
                         </div>
 
                         <div className="card address">
-                            {/* <address> */}
                             <p>
                                 33/A, Sonchapha Colony <br />
                                 Near Kalyani Nagar <br />
@@ -41,9 +35,8 @@ const contact = () => {
                                 Maharashtra, India <br />
                                 424001 <br />
                             </p>
-                            <span className="phoneNo"> <IoCallOutline /><a href="#"> &nbsp;+91&nbsp;6545851263 </a> </span><br />
-                            <span className="phoneNo"> <IoAtSharp /> <a href="#"> &nbsp;parag@example.com </a></span>
-                            {/* </address> */}
+                            <span className="phoneNo"> <IoCallOutline /><a href="tel:+917057634075"> &nbsp;+91&nbsp;7057634075 </a> </span><br />
+                            <span className="phoneNo"> <IoAtSharp /> <a href="mailto:vipashtech@gmail.com"> &nbsp;vipashtech@gmail.com </a></span>
                         </div>
                     </div>
                 </div>
