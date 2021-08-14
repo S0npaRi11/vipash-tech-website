@@ -1,7 +1,12 @@
+// import React from 'react'
 import React, { Suspense, lazy } from 'react';
 import {IoCodeSlashOutline, IoCartOutline} from 'react-icons/io5'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
+
+// import SecondaryNav from '../partials/secondaryNav'
+// import Header from '../partials/header'
+// import SecondaryFooter from '../partials/secondaryFooter'
 
 const SecondaryNav = lazy(() => import('../partials/secondaryNav'))
 const Header = lazy(() => import('../partials/header'))
@@ -30,6 +35,12 @@ const services = () => {
                                 <div className="heading"> Website Development </div>
                             </div>
                         </Link>
+
+
+                        {/* <div className="card serviceCard">
+                            <div className="icon"> <IoCogSharp /> </div>
+                            <div className="heading"> Web Services Development </div>
+                        </div> */}
 
                         <Link to="/services/ecommerce-development">
                             <div className="card serviceCard">

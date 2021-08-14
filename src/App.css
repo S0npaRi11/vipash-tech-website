@@ -19,6 +19,14 @@ body, html{
     scroll-behavior: smooth;
 }
 
+/* div{
+    width: 100%;
+} */
+
+/* .snap{
+    scroll-behavior: smooth;
+} */
+
 a{
     text-decoration: none;
 }
@@ -35,6 +43,12 @@ a{
 .navActive{
     border-bottom: #463f3aff 2px solid;
 }
+
+/* .navActive::after{
+    content: '';
+    te
+    background-color: #463f3aff;
+} */
 
 section{
     width: 100%;
@@ -194,6 +208,7 @@ section{
 }
 
 .hero-image{
+    /* background-image: url('./static/hero-image-flipped.png'); */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -245,6 +260,7 @@ section{
     text-align: center;
     font-size: 45px;
     padding: 25px 0;
+    /* color: #FFFCF9; */
 }
 
 .heading{
@@ -252,17 +268,20 @@ section{
     font-size: 45px;
     padding: 25px 0;
     line-height: 3rem;
+    /* color: #FFFCF9; */
 }
 
 #expertiese > .sub-heading{
     padding: 25px 0;
     text-align: center;
+    /* color: #FFFCF9; */
     font-size: 25px;
 }
 
 .sub-heading{
     padding: 25px 0;
     text-align: center;
+    /* color: #FFFCF9; */
     font-size: 25px;
 }
 
@@ -278,6 +297,10 @@ section{
     white-space: break-spaces;
 }
 
+/* .ecom-content p{
+    font-size: 16px;
+} */
+
 .ecom-content svg{
     font-size: 70px;
 }
@@ -292,6 +315,7 @@ section{
     text-align: center;
     font-size: 45px;
     padding: 25px 0;
+    /* color: #FFFCF9; */
 }
 
 #reviews-and-customers{
@@ -302,6 +326,7 @@ section{
     text-align: center;
     font-size: 45px;
     padding: 25px 0;
+    /* color: #; */
 }
 
 .reviewCard{
@@ -309,6 +334,7 @@ section{
 }
 
 .serviceCard .heading{
+    /* font-size: 30px !important; */
     padding: 20px 0;
     min-width: 250px;
 }
@@ -330,6 +356,7 @@ section{
     align-items: center;
     justify-items: center;
     column-gap: 60px;
+    /* height: auto !important; */
 }
 
 .about-info h2.heading{
@@ -344,6 +371,22 @@ section{
     letter-spacing: 5px;
     text-transform: uppercase;
 }
+
+/* .toTop{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    color: #252B31;
+    background: #FFFCF9;
+    font-size: 36px;
+    text-align: center;
+    transition: 0.2s ease-out;
+    display: none;
+} */
 
 .toTop a{
     text-decoration: none;
@@ -470,16 +513,24 @@ nav ul li a{
     display: block;
     color: #463f3aff;
     text-align: center;
+    /* padding: 20px 0px 0px 0px; */
     text-decoration: none;
     width: auto;
+    /* height: 60px; */
     transition: 0.2s ease-out;
     font-size: 18px;
     letter-spacing: 2px;
+    /* text-transform: uppercase; */
 }
 
 nav ul li a:hover{
     color: #cec8bf;
 }
+/* nav ul li a:hover > ul{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+} */
 
 .logo{
     width: 70px;
@@ -499,6 +550,26 @@ nav ul li a:hover{
     display: flex;
     justify-content: space-around;
 }
+
+/* .deep-nav-links{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+.deep-nav-links li{
+    padding: 10px;
+}
+
+.has-deep-nav:hover ul.deep-nav-links{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+} */
 
 .container{
     width: 90%;
@@ -650,7 +721,10 @@ input, textarea{
     padding: 15px;
     font-size: 18px;
     border-radius: 5px;
+    /* margin-top: 45px; */
     transition: 0.2s ease-out;
+    /* border: 0.5px solid #ffffff; */
+    /* height: 100%; */
 }
 
 #complaint-proof::file-selector-button:hover{
@@ -675,7 +749,9 @@ input, textarea{
 }
 
 .slide{
+    /* display: none; */
     text-align: center;
+    /* color: #FFFCF9; */
 }
 
 .slick-dots{
@@ -771,8 +847,14 @@ input, textarea{
     padding: 45px 0;
     background: #ffffff;
 }
+/*
+#header  h1{
+    padding-top: 45px;
+} */
 
 .footer{
+    /* background: #252B31;
+    color: #FFFCF9; */
     padding: 50px 0 !important;
 }
 
@@ -812,6 +894,10 @@ input, textarea{
     from {opacity: .02}
     to {opacity: 1}
 }
+
+/* .slick-arrow{
+    display: none !important;
+} */
 
 @media only screen and (max-width: 900px){
 
@@ -857,19 +943,26 @@ input, textarea{
         height: 100vh;
         top: 0;
         bottom: 0;
+        /* left:100vw; */
         transition: 0.2s ease-out;
         background: #fff;
         z-index: 110;
+        /* overscroll-behavior: contain; */
+        /* overflow: hidden; */
+        /* display: none; */
     }
 
     .hamVisible{
         display: block;
+        /* left: calc(100vw - 85%); */
         transition: 0.2s ease-out;
     }
 
     .hamburger ul{
         display: block;
+        /* height: 100vh; */
         padding-top: 50px;
+        /* padding-top: 25px; */
     }
 
     .hamburger ul li{
@@ -952,6 +1045,7 @@ input, textarea{
 
     .hero-form{
         left: 10%;
+        /* right: 0; */
         top: 80%;
     }
 

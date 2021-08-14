@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom'
-import { IoEllipsisVerticalSharp,IoInformationCircleOutline, IoMailOutline, IoCogOutline } from 'react-icons/io5'
+import { IoEllipsisVerticalSharp, IoEllipsisHorizontalSharp,IoInformationCircleOutline, IoMailOutline, IoCogOutline } from 'react-icons/io5'
 
+// import logo from '../static/card-image.png'
 import logo from '../static/Vipash-technologies-logo/logo-70x70.webp'
+
 
 const primaryNav = () => {
 
@@ -25,18 +27,27 @@ const primaryNav = () => {
 
                     <span className="nav-links hideWhenMobile">
                         <li> <NavLink to="/about" activeClassName="navActive"> about </NavLink> </li>
-                        <li> <NavLink to="/services" className="has-deep-nav" activeClassName="navActive"> services </NavLink> </li>
+                        <li> <NavLink to="/services" className="has-deep-nav" activeClassName="navActive"> services </NavLink>
+                            {/* <ul className="deep-nav-links">
+                                <li> Website Developemnt </li>
+                                <li> eCommerce Developemnt </li>
+                            </ul> */}
+                        </li>
                         <li> <NavLink to="/contact" activeClassName="navActive"> <button className="navBtn"> contact </button> </NavLink> </li>
+                        {/* <li> <Link to="/blog"> blog </Link> </li> */}
                     </span>
+
                 </ul>
             </div>
 
             { toggle && <div className="hamburger visibleForMobile">
                 <div className="container">
                     <ul>
+                        {/* <li> <a onClick={ toggleHam } id="hamClose"> <IoEllipsisHorizontalSharp /> </a> </li> */}
                         <li>  <NavLink to="/about" activeClassName="navActive"> <IoInformationCircleOutline />  about </NavLink> </li>
                         <li> <NavLink to="/contact" activeClassName="navActive"> <IoMailOutline /> contact </NavLink> </li>
                         <li> <NavLink to="/services" activeClassName="navActive"><IoCogOutline /> services </NavLink> </li>
+                        {/* <li> <Link to="/blog"><IoDocumentTextOutline /> blog </Link> </li> */}
                     </ul>
                 </div>
             </div>}

@@ -27,7 +27,7 @@ function App() {
         <meta name="description" content="Vipash Technologies helps you to get your business online and make it available to the wider audience."/>
       </Helmet>
 
-      <Router>
+      <Router basename="vipash-tech-website">
         <Suspense fallback={<div className="loader"> Loading.... </div>}>
           <Switch>
 

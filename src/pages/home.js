@@ -1,5 +1,12 @@
 import React, { Suspense, lazy } from 'react';
 
+// import PrimaryNav from '../partials/primaryNav'
+// import Hero from '../partials/hero'
+// import Expertiese from '../partials/expertiese'
+// import Intro from '../partials/intro'
+// import Reviews from '../partials/reviews-and-customers'
+// import PrimaryFooter from '../partials/primaryFooter'
+
 const PrimaryNav = lazy(() => import('../partials/primaryNav'))
 const Hero = lazy(() => import('../partials/hero'))
 const Expertiese = lazy(() => import('../partials/expertiese'))

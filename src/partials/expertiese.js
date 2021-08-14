@@ -64,6 +64,11 @@ const expertiese = () => {
     
                 </div>
             </div>
+
+            {/* <div className="toTop">
+               <a href="#hero"> <i className="las la-arrow-up"></i> </a>
+            </div> */}
+
         </section>
     )
 }

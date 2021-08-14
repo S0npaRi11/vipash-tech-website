@@ -14,11 +14,13 @@ const clientsList = () => {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
+        // speed: 2000,
         arrows: false,
     }
 
     return (
         <React.Fragment>
+        {/* <h2 className="heading"> Our Clients </h2> */}
             <div className="container p-tb-30">
                 <Slider {...options}>
                     <div>

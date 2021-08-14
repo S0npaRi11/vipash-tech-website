@@ -29,6 +29,8 @@ const secondaryNav = () => {
                         <li> <NavLink to="/about" activeClassName="navActive"> about </NavLink> </li>
                         <li> <NavLink to="/services" activeClassName="navActive"> services </NavLink> </li>
                         <li> <NavLink to="/contact" activeClassName="navActive"> <button className="navBtn"> contact </button>  </NavLink> </li>
+
+                        {/* <li> <NavLink to="/blog"> blog </NavLink> </li> */}
                     </span>
 
                 </ul>
@@ -37,9 +39,12 @@ const secondaryNav = () => {
             { toggle && <div className="hamburger visibleForMobile">
                 <div className="container">
                     <ul>
+                        {/* <li> <a onClick={ toggleHam } id="hamClose"> <IoEllipsisHorizontalSharp /> </a> </li> */}
+                        {/* <li> <a href="#" className="logo"> <img src={logo} alt="logo"/> </a> </li> */}
                         <li>  <NavLink to="/about" activeClassName="navActive"> <IoInformationCircleOutline />  about </NavLink> </li>
                         <li> <NavLink to="/contact" activeClassName="navActive"><IoMailOutline /> contact </NavLink> </li>
                         <li> <NavLink to="/services" activeClassName="navActive"><IoCogOutline /> services </NavLink> </li>
+                        {/* <li> <NavLink to="/blog"><IoDocumentTextOutline /> blog </NavLink> </li> */}
                     </ul>
                 </div>
             </div>}

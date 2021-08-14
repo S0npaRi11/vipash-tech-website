@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { IoCallOutline, IoAtSharp, IoLogoFacebook, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5'
+import { IoLocationOutline, IoCallOutline, IoAtSharp, IoLogoFacebook, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5'
 
 
 const secondaryFooter = () => {
@@ -10,13 +10,14 @@ const secondaryFooter = () => {
                 <div className="grid-13 mgrid">
                     <div>
                         <address> 
+                            {/* <i class="las la-map-marked-alt"></i><br /> */}
                             33/A, Sonchapha Colony <br />
                             Near Kalyani Nagar <br />
                             Sakri Road, Dhule <br />
                             Maharashtra, India <br />
                             <br />
-                            <span className="phoneNo"> <IoCallOutline /><a href="tel:+917057634075"> &nbsp;+91&nbsp;7057634075 </a> </span><br />
-                            <span className="phoneNo"> <IoAtSharp /> <a href="mailto:vipashtech@gmail.com"> &nbsp;vipashtech@gmail.com </a></span>
+                            <span className="phoneNo"> <IoCallOutline /><a href="#"> &nbsp;+91&nbsp;6545851263 </a> </span><br />
+                            <span className="phoneNo"> <IoAtSharp /> <a href="#"> &nbsp;parag@example.com </a></span>
                             
                         </address>
                     </div>
@@ -40,9 +41,9 @@ const secondaryFooter = () => {
 
                     <div>
                         <span className="social-media-links">
-                            <a href="https://www.facebook.com/vipashtech"> <IoLogoFacebook /> </a>
-                            <a href="https://https://www.instagram.com/vipashtech/"> <IoLogoInstagram /> </a>
-                            <a href="https://www.linkedin.com/company/74883767/"> <IoLogoLinkedin /> </a>
+                            <a href="#"> <IoLogoFacebook /> </a>
+                            <a href="#"> <IoLogoInstagram /> </a>
+                            <a href="#"> <IoLogoLinkedin /> </a>
                         </span>
                     </div>
                 </div>
